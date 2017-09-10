@@ -3,11 +3,11 @@ package com.demo.lizejun.dagger2sample.chapter1.inject;
 import android.content.Context;
 import com.demo.lizejun.dagger2sample.chapter1.IMobile;
 
-public class InjectPerson {
+public class Person {
 
     private IMobile mMobile;
 
-    public InjectPerson(IMobile mobile) {
+    public Person(IMobile mobile) {
         this.mMobile = mobile;
     }
 

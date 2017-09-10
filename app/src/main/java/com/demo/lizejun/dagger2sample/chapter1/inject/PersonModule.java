@@ -6,10 +6,10 @@ import dagger.Module;
 import dagger.Provides;
 
 @Module
-public class InjectPersonModule {
+public class PersonModule {
 
     @Provides
-    public InjectPerson provideInjectPerson(@Android IMobile mobile) {
-        return new InjectPerson(mobile);
+    public Person providePerson(@Android IMobile mobile) {
+        return new Person(mobile);
     }
 }
