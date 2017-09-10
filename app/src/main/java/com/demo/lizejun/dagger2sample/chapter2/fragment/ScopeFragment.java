@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.demo.lizejun.dagger2sample.R;
 import com.demo.lizejun.dagger2sample.chapter2.activity.ScopeActivity;
+import com.demo.lizejun.dagger2sample.chapter2.activity.ScopeActivityNormalData;
 import com.demo.lizejun.dagger2sample.chapter2.activity.ScopeActivitySharedData;
 import com.demo.lizejun.dagger2sample.chapter2.app.ScopeAppData;
 
@@ -26,6 +27,9 @@ public class ScopeFragment extends Fragment {
 
     @Inject
     ScopeActivitySharedData mScopeActivitySharedData;
+
+    @Inject
+    ScopeActivityNormalData ScopeActivityNormalData;
 
     @Inject
     ScopeFragmentData mScopeFragmentData;
@@ -44,6 +48,7 @@ public class ScopeFragment extends Fragment {
         TextView tv = (TextView) rootView.findViewById(R.id.tv_scope_fragment);
         String result = "[ScopeFragment Space] \n mScopeAppData=" + mScopeAppData
                 + "\n\n" + "mScopeActivitySharedData1=" + mScopeActivitySharedData
+                + "\n\n" + "ScopeActivityNormalData=" + ScopeActivityNormalData
                 + "\n\n" + "mScopeFragmentData=" + mScopeFragmentData;
         tv.setText(result);
         return rootView;
