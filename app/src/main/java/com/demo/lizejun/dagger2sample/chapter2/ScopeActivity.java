@@ -9,8 +9,10 @@ import android.widget.Button;
 import com.demo.lizejun.dagger2sample.R;
 import com.demo.lizejun.dagger2sample.chapter2.app.App;
 import com.demo.lizejun.dagger2sample.chapter2.app.AppComponent;
-import com.demo.lizejun.dagger2sample.chapter2.inject.DaggerPersonComponent;
+import com.demo.lizejun.dagger2sample.chapter2.inject.DaggerActivityComponent;
 import com.demo.lizejun.dagger2sample.chapter2.inject.Person;
+import com.demo.lizejun.dagger2sample.chapter2.inject.ActivityComponent;
+
 import javax.inject.Inject;
 
 public class ScopeActivity extends AppCompatActivity {
@@ -24,11 +26,13 @@ public class ScopeActivity extends AppCompatActivity {
     @Inject
     Context mContext;
 
+    private ActivityComponent mActivityComponent;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scope);
-        DaggerPersonComponent.builder().appComponent(getAppComponent()).build().inject(this);
+        getPersonComponent().inject(this);
         Button btnDial = (Button) findViewById(R.id.bt_dial);
         btnDial.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,5 +45,12 @@ public class ScopeActivity extends AppCompatActivity {
 
     private AppComponent getAppComponent() {
         return ((App) getApplication()).getAppComponent();
+    }
+
+    public ActivityComponent getPersonComponent() {
+        if (mActivityComponent == null) {
+            mActivityComponent = DaggerActivityComponent.builder().appComponent(getAppComponent()).build();
+        }
+        return mActivityComponent;
     }
 }

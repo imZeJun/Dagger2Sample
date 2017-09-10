@@ -11,4 +11,9 @@
         android:text="拨打电话"
         android:layout_width="match_parent"
         android:layout_height="40dp" />
+    <fragment
+        android:id="@+id/fragment_scope"
+        android:name="com.demo.lizejun.dagger2sample.chapter2.ScopeFragment"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
 </LinearLayout>
