@@ -2,6 +2,7 @@ package com.demo.lizejun.dagger2sample.chapter1;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -14,6 +15,8 @@ import javax.inject.Inject;
 
 public class InjectSimpleActivity extends AppCompatActivity {
 
+    private static final String TAG = InjectSimpleActivity.class.getSimpleName();
+
     private Button mBtnDialNormal;
     private Button mBtnDialInject;
 
@@ -21,6 +24,8 @@ public class InjectSimpleActivity extends AppCompatActivity {
 
     @Inject
     Person mPerson;
+    @Inject
+    Person mOtherPerson;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +49,7 @@ public class InjectSimpleActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 mPerson.dial(InjectSimpleActivity.this, "你好，我是杂毛");
+                Log.d(TAG, "mPerson=" + mPerson + "\nmOtherPerson=" + mOtherPerson);
             }
         });
     }

@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import com.demo.lizejun.dagger2sample.chapter1.InjectSimpleActivity;
+import com.demo.lizejun.dagger2sample.chapter2.ScopeActivity;
 import com.demo.lizejun.dagger2sample.utils.Utils;
 import java.util.ArrayList;
 import java.util.List;
@@ -36,6 +37,9 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainViewHolder
                 switch (holder.getAdapterPosition()) {
                     case 0:
                         Utils.startActivity(v.getContext(), InjectSimpleActivity.class);
+                        break;
+                    case 1:
+                        Utils.startActivity(v.getContext(), ScopeActivity.class);
                         break;
                     default:
                         break;

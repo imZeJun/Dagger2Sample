@@ -1,7 +1,6 @@
 package com.demo.lizejun.dagger2sample.chapter1.inject;
 
 import com.demo.lizejun.dagger2sample.chapter1.InjectSimpleActivity;
-
 import dagger.Component;
 
 @Component(modules = {PersonModule.class, MobileModule.class})

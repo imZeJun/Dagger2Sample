@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.rv_main);
         List<String> titles = new ArrayList<>();
         titles.add("(1) 使用 @Inject 和 @Component");
+        titles.add("(2) 使用 @Scope");
         MainAdapter mainAdapter = new MainAdapter(titles);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(mainAdapter);
