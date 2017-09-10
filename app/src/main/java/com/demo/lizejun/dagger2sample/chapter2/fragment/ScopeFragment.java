@@ -1,4 +1,4 @@
-package com.demo.lizejun.dagger2sample.chapter2;
+package com.demo.lizejun.dagger2sample.chapter2.fragment;
 
 
 import android.content.Context;
@@ -11,16 +11,24 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.demo.lizejun.dagger2sample.R;
-import com.demo.lizejun.dagger2sample.chapter2.inject.Person;
+import com.demo.lizejun.dagger2sample.chapter2.activity.ScopeActivity;
+import com.demo.lizejun.dagger2sample.chapter2.activity.ScopeActivitySharedData;
+import com.demo.lizejun.dagger2sample.chapter2.app.ScopeAppData;
 
 import javax.inject.Inject;
 
 public class ScopeFragment extends Fragment {
 
-    @Inject
-    Person mPerson;
-
     private ScopeActivity mScopeActivity;
+
+    @Inject
+    ScopeAppData mScopeAppData;
+
+    @Inject
+    ScopeActivitySharedData mScopeActivitySharedData;
+
+    @Inject
+    ScopeFragmentData mScopeFragmentData;
 
     @Override
     public void onAttach(Context context) {
@@ -31,10 +39,13 @@ public class ScopeFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        mScopeActivity.getPersonComponent().fragmentComponent().inject(this);
         View rootView = inflater.inflate(R.layout.fragment_scope, container, false);
+        mScopeActivity.getScopeActivityComponent().scopeFragmentComponent().inject(this);
         TextView tv = (TextView) rootView.findViewById(R.id.tv_scope_fragment);
-        tv.setText(mPerson.toString());
+        String result = "[ScopeFragment Space] \n mScopeAppData=" + mScopeAppData
+                + "\n\n" + "mScopeActivitySharedData1=" + mScopeActivitySharedData
+                + "\n\n" + "mScopeFragmentData=" + mScopeFragmentData;
+        tv.setText(result);
         return rootView;
     }
 
