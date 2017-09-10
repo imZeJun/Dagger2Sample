@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.demo.lizejun.dagger2sample.chapter1.InjectSimpleActivity">
+    <TextView
+        android:id="@+id/tv_dial_normal"
+        android:text="使用普通方式拨打电话"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+    <TextView
+        android:id="@+id/tv_dial_inject"
+        android:text="使用依赖注入方式拨打电话"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+</LinearLayout>
