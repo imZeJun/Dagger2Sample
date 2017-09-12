@@ -5,18 +5,17 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.demo.lizejun.dagger2sample.chapter1.InjectSimpleActivity">
+    tools:context="com.demo.lizejun.dagger2sample.chapter1.SimpleActivity">
     <Button
-        android:id="@+id/bt_dial_normal"
+        android:id="@+id/bt_get_data"
         android:gravity="center"
-        android:text="使用普通方式拨打电话"
+        android:text="获取数据"
         android:layout_width="match_parent"
         android:layout_height="40dp"/>
     <Button
-        android:id="@+id/bt_dial_inject"
-        android:layout_marginTop="10dp"
+        android:id="@+id/bt_get_net_data"
         android:gravity="center"
-        android:text="使用依赖注入方式拨打电话"
+        android:text="获取网络数据"
         android:layout_width="match_parent"
         android:layout_height="40dp"/>
 </LinearLayout>

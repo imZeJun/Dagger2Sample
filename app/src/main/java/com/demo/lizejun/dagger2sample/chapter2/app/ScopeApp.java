@@ -1,9 +1,9 @@
 package com.demo.lizejun.dagger2sample.chapter2.app;
 
 
-import android.support.multidex.MultiDexApplication;
+import android.app.Application;
 
-public class ScopeApp extends MultiDexApplication {
+public class ScopeApp extends Application {
 
     private ScopeAppComponent mScopeAppComponent;
 

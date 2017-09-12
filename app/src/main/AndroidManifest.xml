@@ -17,7 +17,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".chapter1.InjectSimpleActivity" />
+        <activity android:name=".chapter1.SimpleActivity" />
         <activity android:name=".chapter2.activity.ScopeActivity"></activity>
     </application>
 
