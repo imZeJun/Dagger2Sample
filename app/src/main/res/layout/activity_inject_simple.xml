@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.demo.lizejun.dagger2sample.chapter1.SimpleActivity">
+    tools:context="com.demo.lizejun.dagger2sample.chapter1.RepositoryActivity">
     <Button
         android:id="@+id/bt_get_data"
         android:gravity="center"

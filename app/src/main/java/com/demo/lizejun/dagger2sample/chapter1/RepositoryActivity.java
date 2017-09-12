@@ -9,9 +9,9 @@ import android.widget.Toast;
 import com.demo.lizejun.dagger2sample.R;
 
 
-public class SimpleActivity extends AppCompatActivity {
+public class RepositoryActivity extends AppCompatActivity {
 
-    private static final String TAG = SimpleActivity.class.getSimpleName();
+    private static final String TAG = RepositoryActivity.class.getSimpleName();
     private Button mBtnGetData;
     private Button mBtnGetNetData;
 
@@ -25,7 +25,7 @@ public class SimpleActivity extends AppCompatActivity {
             public void onClick(View v) {
                 DataRepository repository = new DataRepository();
                 String data = repository.getData();
-                Toast.makeText(SimpleActivity.this, data, Toast.LENGTH_SHORT).show();
+                Toast.makeText(RepositoryActivity.this, data, Toast.LENGTH_SHORT).show();
             }
         });
         mBtnGetNetData = (Button) findViewById(R.id.bt_get_net_data);
@@ -34,7 +34,7 @@ public class SimpleActivity extends AppCompatActivity {
             public void onClick(View v) {
                 DataRepository repository = new DataRepository();
                 String data = repository.getNetData();
-                Toast.makeText(SimpleActivity.this, data, Toast.LENGTH_SHORT).show();
+                Toast.makeText(RepositoryActivity.this, data, Toast.LENGTH_SHORT).show();
             }
         });
     }

@@ -5,7 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import com.demo.lizejun.dagger2sample.chapter1.SimpleActivity;
+import com.demo.lizejun.dagger2sample.chapter1.RepositoryActivity;
 import com.demo.lizejun.dagger2sample.chapter2.activity.ScopeActivity;
 import com.demo.lizejun.dagger2sample.utils.Utils;
 import java.util.ArrayList;
@@ -36,7 +36,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainViewHolder
             public void onClick(View v) {
                 switch (holder.getAdapterPosition()) {
                     case 0:
-                        Utils.startActivity(v.getContext(), SimpleActivity.class);
+                        Utils.startActivity(v.getContext(), RepositoryActivity.class);
                         break;
                     case 1:
                         Utils.startActivity(v.getContext(), ScopeActivity.class);

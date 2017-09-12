@@ -1,6 +1,5 @@
 package com.demo.lizejun.dagger2sample.chapter1;
 
-
 import javax.inject.Inject;
 
 public class LocalSource {
