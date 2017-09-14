@@ -6,6 +6,7 @@ import javax.inject.Inject;
 
 public class DataRepository {
 
+    @Inject
     LocalSource mLocalSource;
 
     @Inject

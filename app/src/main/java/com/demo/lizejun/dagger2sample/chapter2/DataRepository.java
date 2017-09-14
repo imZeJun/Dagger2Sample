@@ -12,7 +12,7 @@ public class DataRepository {
     @Remote Source mRemoteSource;
 
     public DataRepository() {
-
+        DaggerSourceComponent.create().inject(this);
     }
 
     public String getLocalData() {

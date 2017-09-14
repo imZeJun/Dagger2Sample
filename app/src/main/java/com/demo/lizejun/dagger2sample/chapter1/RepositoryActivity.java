@@ -18,7 +18,7 @@ public class RepositoryActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_inject_simple);
+        setContentView(R.layout.activity_repository);
         mBtnGetData = (Button) findViewById(R.id.bt_get_data);
         mBtnGetData.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.demo.lizejun.dagger2sample.chapter2.QualifierActivity">
-
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/bt_get_data"
+        android:gravity="center"
+        android:text="获取本地数据"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+    <Button
+        android:id="@+id/bt_get_net_data"
+        android:gravity="center"
+        android:text="获取网络数据"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+</LinearLayout>
