@@ -1,4 +1,4 @@
-package com.demo.lizejun.dagger2sample.chapter2.activity;
+package com.demo.lizejun.dagger2sample.chapter3.activity;
 
 import dagger.Module;
 import dagger.Provides;

@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.demo.lizejun.dagger2sample.chapter2.activity.ScopeActivity">
+    tools:context="com.demo.lizejun.dagger2sample.chapter3.activity.ScopeActivity">
     <TextView
         android:id="@+id/tv_scope_activity"
         android:gravity="center"
@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"/>
     <fragment
         android:id="@+id/fragment_scope"
-        android:name="com.demo.lizejun.dagger2sample.chapter2.fragment.ScopeFragment"
+        android:name="com.demo.lizejun.dagger2sample.chapter3.fragment.ScopeFragment"
         android:layout_height="match_parent"
         android:layout_width="match_parent"/>
 </LinearLayout>

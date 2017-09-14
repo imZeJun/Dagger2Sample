@@ -1,4 +1,4 @@
-package com.demo.lizejun.dagger2sample.chapter2.fragment;
+package com.demo.lizejun.dagger2sample.chapter3.fragment;
 
 
 import android.content.Context;
@@ -11,10 +11,10 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.demo.lizejun.dagger2sample.R;
-import com.demo.lizejun.dagger2sample.chapter2.activity.ScopeActivity;
-import com.demo.lizejun.dagger2sample.chapter2.activity.ScopeActivityNormalData;
-import com.demo.lizejun.dagger2sample.chapter2.activity.ScopeActivitySharedData;
-import com.demo.lizejun.dagger2sample.chapter2.app.ScopeAppData;
+import com.demo.lizejun.dagger2sample.chapter3.activity.ScopeActivity;
+import com.demo.lizejun.dagger2sample.chapter3.activity.ScopeActivityNormalData;
+import com.demo.lizejun.dagger2sample.chapter3.activity.ScopeActivitySharedData;
+import com.demo.lizejun.dagger2sample.chapter3.app.ScopeAppData;
 
 import javax.inject.Inject;
 

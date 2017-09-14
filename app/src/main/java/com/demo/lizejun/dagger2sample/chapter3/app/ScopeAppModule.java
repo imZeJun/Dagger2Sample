@@ -1,4 +1,4 @@
-package com.demo.lizejun.dagger2sample.chapter2.app;
+package com.demo.lizejun.dagger2sample.chapter3.app;
 
 import javax.inject.Singleton;
 

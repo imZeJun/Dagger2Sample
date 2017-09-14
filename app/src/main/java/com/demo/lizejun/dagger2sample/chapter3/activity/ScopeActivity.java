@@ -1,12 +1,12 @@
-package com.demo.lizejun.dagger2sample.chapter2.activity;
+package com.demo.lizejun.dagger2sample.chapter3.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 import com.demo.lizejun.dagger2sample.R;
-import com.demo.lizejun.dagger2sample.chapter2.app.ScopeApp;
-import com.demo.lizejun.dagger2sample.chapter2.app.ScopeAppComponent;
-import com.demo.lizejun.dagger2sample.chapter2.app.ScopeAppData;
+import com.demo.lizejun.dagger2sample.chapter3.app.ScopeApp;
+import com.demo.lizejun.dagger2sample.chapter3.app.ScopeAppComponent;
+import com.demo.lizejun.dagger2sample.chapter3.app.ScopeAppData;
 import javax.inject.Inject;
 
 public class ScopeActivity extends AppCompatActivity {
