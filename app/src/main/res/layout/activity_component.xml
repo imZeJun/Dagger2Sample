@@ -6,13 +6,13 @@
     <Button
         android:id="@+id/bt_get_data"
         android:gravity="center"
-        android:text="获取本地数据"
+        android:text="依赖方式"
         android:layout_width="match_parent"
         android:layout_height="40dp"/>
     <Button
         android:id="@+id/bt_get_net_data"
         android:gravity="center"
-        android:text="获取网络数据"
+        android:text="包含方式"
         android:layout_width="match_parent"
         android:layout_height="40dp"/>
 </LinearLayout>
