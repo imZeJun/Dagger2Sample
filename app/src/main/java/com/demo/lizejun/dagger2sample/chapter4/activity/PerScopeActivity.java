@@ -1,4 +1,4 @@
-package com.demo.lizejun.dagger2sample.chapter3.fragment;
+package com.demo.lizejun.dagger2sample.chapter4.activity;
 
 
 import java.lang.annotation.Documented;
@@ -10,4 +10,4 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 @Documented
 @Retention(RUNTIME)
 @Scope
-public @interface PerScopeFragment {}
+public @interface PerScopeActivity {}

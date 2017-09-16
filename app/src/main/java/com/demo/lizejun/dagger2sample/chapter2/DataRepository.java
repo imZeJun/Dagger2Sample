@@ -2,14 +2,15 @@ package com.demo.lizejun.dagger2sample.chapter2;
 
 
 import javax.inject.Inject;
+import javax.inject.Named;
 
 public class DataRepository {
 
     @Inject
-    @Local Source mLocalSource;
+    @Named("Local") Source mLocalSource;
 
     @Inject
-    @Remote Source mRemoteSource;
+    @Named("Remote") Source mRemoteSource;
 
     public DataRepository() {
         DaggerSourceComponent.create().inject(this);

@@ -1,4 +1,4 @@
-package com.demo.lizejun.dagger2sample.chapter3.app;
+package com.demo.lizejun.dagger2sample.chapter4.app;
 
 
 import android.app.Application;

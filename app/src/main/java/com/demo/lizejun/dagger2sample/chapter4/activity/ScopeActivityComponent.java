@@ -1,8 +1,8 @@
-package com.demo.lizejun.dagger2sample.chapter3.activity;
+package com.demo.lizejun.dagger2sample.chapter4.activity;
 
 
-import com.demo.lizejun.dagger2sample.chapter3.app.ScopeAppComponent;
-import com.demo.lizejun.dagger2sample.chapter3.fragment.ScopeFragmentComponent;
+import com.demo.lizejun.dagger2sample.chapter4.app.ScopeAppComponent;
+import com.demo.lizejun.dagger2sample.chapter4.fragment.ScopeFragmentComponent;
 
 import dagger.Component;
 

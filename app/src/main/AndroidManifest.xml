@@ -3,7 +3,7 @@
     package="com.demo.lizejun.dagger2sample">
 
     <application
-        android:name=".chapter3.app.ScopeApp"
+        android:name=".chapter4.app.ScopeApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -18,8 +18,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".chapter1.RepositoryActivity" />
-        <activity android:name=".chapter3.activity.ScopeActivity" />
-        <activity android:name=".chapter2.QualifierActivity"></activity>
+        <activity android:name=".chapter4.activity.ScopeActivity" />
+        <activity android:name=".chapter2.QualifierActivity" />
+        <activity android:name=".chapter3.ComponentActivity"></activity>
     </application>
 
 </manifest>

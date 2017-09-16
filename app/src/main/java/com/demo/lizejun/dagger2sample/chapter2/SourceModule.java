@@ -1,5 +1,7 @@
 package com.demo.lizejun.dagger2sample.chapter2;
 
+import javax.inject.Named;
+
 import dagger.Module;
 import dagger.Provides;
 
@@ -7,13 +9,13 @@ import dagger.Provides;
 public class SourceModule {
 
     @Provides
-    @Local
+    @Named("Local")
     public Source provideLocalSource() {
         return new LocalSource();
     }
 
     @Provides
-    @Remote
+    @Named("Remote")
     public Source providerRemoteSource() {
         return new RemoteSource();
     }

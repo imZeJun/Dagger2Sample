@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import com.demo.lizejun.dagger2sample.chapter1.RepositoryActivity;
 import com.demo.lizejun.dagger2sample.chapter2.QualifierActivity;
-import com.demo.lizejun.dagger2sample.chapter3.activity.ScopeActivity;
+import com.demo.lizejun.dagger2sample.chapter3.ComponentActivity;
 import com.demo.lizejun.dagger2sample.utils.Utils;
 import java.util.ArrayList;
 import java.util.List;
@@ -41,6 +41,9 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainViewHolder
                         break;
                     case 1:
                         Utils.startActivity(v.getContext(), QualifierActivity.class);
+                        break;
+                    case 2:
+                        Utils.startActivity(v.getContext(), ComponentActivity.class);
                         break;
                     default:
                         break;
