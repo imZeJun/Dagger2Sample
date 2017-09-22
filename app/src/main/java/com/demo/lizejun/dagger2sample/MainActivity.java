@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
         titles.add("(1) 使用 @Inject 和 @Component");
         titles.add("(2) 使用 @Qualifier 和 @Name");
         titles.add("(3) 依赖、包含方式");
+        titles.add("(4) @Scope");
+        titles.add("(5) Android 支持库");
         MainAdapter mainAdapter = new MainAdapter(titles);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(mainAdapter);
