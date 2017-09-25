@@ -7,7 +7,5 @@ import dagger.android.AndroidInjector;
 public interface ActivityComponent extends AndroidInjector<HomeActivity> {
 
     @Subcomponent.Builder
-    public abstract class Builder extends AndroidInjector.Builder<HomeActivity> {
-
-    }
+    abstract class Builder extends AndroidInjector.Builder<HomeActivity> {}
 }

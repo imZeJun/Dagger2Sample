@@ -6,7 +6,7 @@ import dagger.android.AndroidInjector;
 import dagger.android.support.AndroidSupportInjectionModule;
 
 @Singleton
-@Component(modules = {AppModule.class, AndroidSupportInjectionModule.class})
+@Component(modules = {AppModule.class, BuildersModule.class, AndroidSupportInjectionModule.class})
 public interface AppComponent extends AndroidInjector<App> {
 
     @Component.Builder
